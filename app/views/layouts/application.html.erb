@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LawsonSite</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header class="header">
+		<div class="top-navbar">
+			<span class="top-icon">icon</span>
+			<span class="nav-links">
+				<span>Home</span>
+				<span>About</span>
+				<span>Projects</span>
+				<span>Blog</span>
+				<span id="nav-contact">Contact</span>
+			</span>
+		</div>
+		<div class=heading>
+			<div class="pre-heading">Developing mind and machine</div>
+			<div class="main-heading">LAWSON MARLOWE</div>
+			<div><span class="heading-link">Watch Video</span></div>
+		</div>
+	</div>
+</header>
+
+
+<%= yield %>
+
+<footer class="footer">
+</footer>
+
+</body>
+</html>

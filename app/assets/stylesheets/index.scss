@@ -1,0 +1,59 @@
+// Place all the styles related to the Index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+	margin: 0;
+}
+
+header {
+padding-bottom: 100px;
+background: image-url("testbg1.jpg") center no-repeat;
+background-size: cover;
+height: auto;
+width: auto;
+z-index: -999999;
+}
+
+.top-navbar > span {
+	position: relative;
+	top: 20px;
+	color: white;
+}
+
+.nav-links {
+  position: relative;
+  float: right;
+}
+
+.nav-links span {
+	margin-right: 40px;
+}
+
+.heading {
+	height: 500px;
+	width: 2000px;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 8vw;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+
+.pre-heading {
+	font-size: 4vw;
+	font-family: cursive;
+}
+
+.heading-link {
+	margin-top: 20px;
+	font-size: 4vw;
+	padding: 10px 20px 10px 20px;
+	border: white solid 2px;
+}
+
+#nav-contact {
+	padding: 5px 10px 5px 10px;
+	border: white solid 1px;
+}
