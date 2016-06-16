@@ -12,21 +12,20 @@
 		<div class="top-navbar">
 			<span class="icon top-icon"><img src=<%=image_path("testbg1")%>></span>
 			<span class="nav-links">
-				<span>Home</span>
-				<span>About</span>
-				<span>Projects</span>
-				<span>Blog</span>
-				<span id="nav-contact">Contact</span>
+				<span class="top-link"><a href="/">Home</a></span>
+				<span class="top-link"><a href="/about">About</a></span>
+				<span class="top-link"><a href="/projects">Projects</a></span>
+				<span class="top-link"><a href="/blog">Blog</a></span>
+				<span class="nav-contact box-link"><a href="/contact">Contact</a></span>
 			</span>
 		</div>
 		<div class="heading">
 			<div class="pre-heading">Developing mind and machine</div>
 			<div class="main-heading">LAWSON MARLOWE</div>
-			<div><span class="heading-link">Watch Video</span></div>
+			<div><span class="heading-link box-link"><a href="/about_vid">Watch Video</a></span></div>
 		</div>
 	</div>
 </header>
-
 
 <%= yield %>
 
@@ -34,26 +33,28 @@
 	<div class="bottom-navbar">
 				<div class="icon bottom-icon"><img src=<%=image_path("testbg1")%>></div>
 				<div class="footer-nav-links">
-					<span>Home</span>
-					<span>About</span>
-					<span>Resume</span>
-					<span>Projects</span>
-					<span>Blog</span>
-					<span>Contact</span>
+					<span><a href="/">Home</a></span>
+					<span><a href="/about">About</a></span>
+					<span><a href="/resume">Resume</a></span>
+					<span><a href="/projects">Projects</a></span>
+					<span><a href="/blog">Blog</a></span>
+					<span><a href="/contact">Contact</a></span>
 				</div>
 				<div class="copywrite">@2016 Lawson Marlowe. All rights reserved. Fullstack Developer/UX-UI Expert</div>
 				<div class="legal">
-					<span>Terms of Service</span>
-					<span>Privacy Policy</span>
+					<span><a href="/legal">Terms of Service</a></span>
+					<span> | </span>
+					<span><a href="/legal">Privacy Policy</a></span>
 				</div>
 			</div>
 			<div class="social-media-icons">
-				<span><img src=<%=image_path("testbg1")%>></span>
-				<span><img src=<%=image_path("testbg1")%>></span>
-				<span><img src=<%=image_path("testbg1")%>></span>
-				<span><img src=<%=image_path("testbg1")%>></span>
-				<span><img src=<%=image_path("testbg1")%>></span>
-				<span><img src=<%=image_path("testbg1")%>></span>
+				<span><a href="http://www.twitter.com/sonomar"><img src=<%=image_path("testbg1")%>></a></span>
+				<span><a href="http://www.twitter.com"><img src=<%=image_path("testbg1")%>></a></span>
+				<span><a href="https://www.linkedin.com/in/lawsonmarlowe
+"><img src=<%=image_path("testbg1")%>></a></span>
+				<span><a href="http://www.facebook.com"><img src=<%=image_path("testbg1")%>></a></span>
+				<span><a href="http://www.github.com"><img src=<%=image_path("testbg1")%>></a></span>
+				<span><a href="http://www.angellist.com"><img src=<%=image_path("testbg1")%>></a></span>
 			</div>
 		</div>
 	  <div class="footer-filler"></div>

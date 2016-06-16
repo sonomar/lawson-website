@@ -6,11 +6,66 @@ body{
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+  -webkit-transition: color .5s, background-color .5s;
+  -moz-transition:    color .5s, background-color .5s;
+  -ms-transition:     color .5s, background-color .5s;
+  -o-transition:      color .5s, background-color .5s;
+  transition:         color .5s, background-color .5s;
+}
+
+.top-link a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.top-link a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.top-link a:visited {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+footer a:visited {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-contact a {
+	color: rgba(255, 255, 255, 0.7);
+	border: white solid 1px;
+	padding: 5px 10px 5px 10px;
+}
+
+.box-link a:visited {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.box-link a:hover {
+  color: rgba(0, 0, 0, 1);
+	background-color: white;
+}
+
+.heading-link a {
+	color: rgba(255, 255, 255, 0.7);
+	padding: 10px 20px 10px 20px;
+	border: white solid 2px;
+}
+
 header {
 padding-bottom: 100px;
 background: image-url("testbg1.jpg") center no-repeat;
 background-size: cover;
 height: auto;
+color: rgba(255, 255, 255, 0.7);
 width: auto;
 z-index: -999999;
 }
@@ -45,7 +100,7 @@ z-index: -999999;
 .top-navbar > span {
 	position: relative;
 	top: 20px;
-	color: white;
+	color: rgba(255, 255, 255, 0.7);
 }
 
 .nav-links {
@@ -77,13 +132,6 @@ z-index: -999999;
 .heading-link {
 	margin-top: 20px;
 	font-size: 4vw;
-	padding: 10px 20px 10px 20px;
-	border: white solid 2px;
-}
-
-#nav-contact {
-	padding: 5px 10px 5px 10px;
-	border: white solid 1px;
 }
 
 .shade-box {
@@ -128,9 +176,22 @@ z-index: -999999;
 }
 
 .shade-button {
+	font-size: 2vw;
+}
+
+.shade-button a {
+	color: black;
 	padding: 30px 60px 30px 60px;
 	border: black solid 3px;
-	font-size: 2vw;
+}
+
+.shade-button a:visited {
+	color: black;
+}
+
+.shade-button a:hover {
+  color: white;
+	background-color: black;
 }
 
 .white-button {
@@ -220,6 +281,14 @@ z-index: -999999;
 	margin-right: 10px;
 	padding-top: 50px;
 	width: 50px;
+	opacity: .7;
+}
+
+.social-media-icons span a:hover img {
+	margin-right: 10px;
+	padding-top: 50px;
+	width: 50px;
+	opacity: 1;
 }
 
 .bottom-navbar {
@@ -228,7 +297,7 @@ z-index: -999999;
 
 footer {
 	background-color: #1a1a1a;
-	color: white;
+	color: rgba(255, 255, 255, .7);
 }
 
 footer div {
