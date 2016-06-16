@@ -15,6 +15,33 @@ width: auto;
 z-index: -999999;
 }
 
+.call-to-action {
+background: image-url("testbg1.jpg") center no-repeat;
+background-size: cover;
+height: auto;
+width: auto;
+z-index: -999999;
+}
+
+.dark-call-to-action {
+background-color: #353439;
+height: 300px;
+width: auto;
+z-index: -999999;
+}
+
+.cta-heading {
+	height: 300px;
+	width: 2000px;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 8vw;
+	position: relative;
+	color: white;
+	text-align: center;
+	margin-bottom: 0;
+}
+
 .top-navbar > span {
 	position: relative;
 	top: 20px;
@@ -39,6 +66,7 @@ z-index: -999999;
 	position: relative;
 	color: white;
 	text-align: center;
+	margin-bottom: 0;
 }
 
 .pre-heading {
@@ -56,4 +84,171 @@ z-index: -999999;
 #nav-contact {
 	padding: 5px 10px 5px 10px;
 	border: white solid 1px;
+}
+
+.shade-box {
+	padding: 100px 200px 100px 200px;
+	font-size: 4vw;
+	text-align: center;
+	margin-top: 0;
+	height: auto;
+	width: auto;
+	background-color: #edeeef;
+}
+
+.shade-box-no-padding {
+	font-size: 4vw;
+	margin-top: 0;
+	height: auto;
+	width: auto;
+	background-color: #edeeef;
+}
+
+.white-box {
+	padding: 100px 200px 100px 200px;
+	font-size: 4vw;
+	text-align: center;
+	margin-top: 0;
+	height: auto;
+	width: auto;
+}
+
+.why-me-title {
+	margin-bottom: 40px;
+}
+
+.why-me-video {
+	margin-bottom: 40px;
+}
+
+.why-me-video img {
+	max-width: 75%;
+	height: auto;
+	width: auto;
+}
+
+.shade-button {
+	padding: 30px 60px 30px 60px;
+	border: black solid 3px;
+	font-size: 2vw;
+}
+
+.white-button {
+	padding: 30px 60px 30px 60px;
+	border: black solid 3px;
+	font-size: 2vw;
+}
+
+.latest-projects-title {
+	padding-top: 100px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.latest-projects {
+	color: white;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.highlight-box {
+	display: block;
+	background: image-url("testbg1.jpg") center no-repeat;
+	height: auto;
+	min-width: 100px;
+	padding: 100px;
+	margin: 20px;
+}
+
+.one-thing-i-do {
+	display: inline-block;
+	height: auto;
+	min-width: 100px;
+	font-size: 2vw;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.one-thing-i-do img {
+	margin-bottom: 30px;
+	max-width: 100px;
+}
+
+.one-thing-i-do div {
+	max-width: 200px;
+}
+
+.thing-i-do-description {
+	font-size: 1.5vw;
+}
+
+.more-projects-button-box {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.everyday-image img {
+	max-width: 150px;
+}
+
+.everyday-life-title {
+	padding-bottom: 30px;
+}
+
+.everyday-life-button-box {
+	padding-top: 50px;
+}
+
+.latest-blogs-title {
+	padding-top: 100px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.latest-blogs {
+	color: white;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.more-blogs-button-box {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.social-media-icons span img {
+	margin-right: 10px;
+	padding-top: 50px;
+	width: 50px;
+}
+
+.bottom-navbar {
+	padding-top: 100px;
+}
+
+footer {
+	background-color: #1a1a1a;
+	color: white;
+}
+
+footer div {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.footer-filler {
+	height: 75px;
+	margin: 0;
+}
+
+.icon img{
+	width: 50px;
+}
+
+.top-icon img {
+	margin-left: 50px;
+}
+
+.button-box {
+	margin-top: 80px;
 }
