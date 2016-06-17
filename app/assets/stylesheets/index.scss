@@ -139,8 +139,12 @@ z-index: -999999;
 	font-size: 4vw;
 }
 
+.heading-link a {
+	color: white;
+}
+
 .shade-box {
-	padding: 100px 200px 100px 200px;
+	padding: 100px 100px 100px 100px;
 	font-size: 4vw;
 	text-align: center;
 	margin-top: 0;
@@ -166,6 +170,10 @@ z-index: -999999;
 	width: auto;
 }
 
+.main-intro-box {
+
+}
+
 .why-me-title {
 	margin-bottom: 40px;
 }
@@ -181,7 +189,7 @@ z-index: -999999;
 }
 
 .shade-button {
-	font-size: 2vw;
+	font-size: 25px;
 }
 
 .shade-button a {
@@ -198,6 +206,10 @@ z-index: -999999;
 .shade-button a:hover {
   color: white;
 	background-color: black;
+}
+
+.latest-projects-box {
+  padding-bottom: 60px;
 }
 
 .latest-projects-title {
@@ -230,7 +242,7 @@ z-index: -999999;
 	display: inline-block;
 	max-height: 100%;
 	max-width: 100%;
-	width: 33.3333%;
+	width: 30%;
 	font-size: 2vw;
 	margin-bottom: 50px;
 	margin-top: 50px;
@@ -247,12 +259,13 @@ z-index: -999999;
 .thing-i-do-header {
 	white-space: normal;
 	min-height: 40px;
+	font-size: 3vw;
 }
 
 .thing-i-do-description {
 	white-space: normal;
 	overflow: hidden;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	height: 50px;
 }
 
@@ -273,11 +286,11 @@ z-index: -999999;
 }
 
 .everyday-image {
-			max-height: 100%;
-		  max-width: 100%;
-		  width: 25%;
-		  height: 25%;
-		  margin: 10px;
+	max-height: 100%;
+  max-width: 100%;
+  width: 25%;
+  height: 25%;
+  margin: 10px;
 }
 
 .everyday-life-box {
