@@ -1,5 +1,31 @@
 $(document).ready(function() {
 
+	var startText;
+
+	$("body").on("mouseenter", ".recent-project", function () {
+		startText = $(this).text();
+		$(this).css({
+			'opacity': ".4",
+			'-webkit-transition': "color .5s, opacity .5s",
+		  '-moz-transition':    "color .5s, opacity .5s",
+		  '-ms-transition':     "color .5s, opacity .5s",
+		  '-o-transition':      "color .5s, opacity .5s",
+		  'transition':         "color .5s, opacity .5s"
+		});
+		$(this).html("test");
+	});
+
+	$("body").on("mouseleave", ".recent-project", function () {
+		$(this).css({
+			'opacity': "1",
+			'-webkit-transition': "color .5s, opacity .5s",
+		  '-moz-transition':    "color .5s, opacity .5s",
+		  '-ms-transition':     "color .5s, opacity .5s",
+		  '-o-transition':      "color .5s, opacity .5s",
+		  'transition':         "color .5s, opacity .5s"
+		});
+		$(this).html(startText);
+	});
 
 	$("body").on("click", "a", function() {
   
