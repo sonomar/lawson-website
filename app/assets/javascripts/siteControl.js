@@ -2,29 +2,56 @@ $(document).ready(function() {
 
 	var startText;
 
-	$("body").on("mouseenter", ".recent-project", function () {
+	$("body").on("mouseenter", ".recent-project-wrapper", function () {
 		startText = $(this).text();
-		$(this).css({
-			'opacity': ".4",
-			'-webkit-transition': "color .5s, opacity .5s",
-		  '-moz-transition':    "color .5s, opacity .5s",
-		  '-ms-transition':     "color .5s, opacity .5s",
-		  '-o-transition':      "color .5s, opacity .5s",
-		  'transition':         "color .5s, opacity .5s"
+		$(this).children().css({
+			'-webkit-transition': "color .5s, background .5s",
+		  '-moz-transition':    "color .5s, background .5s",
+		  '-ms-transition':     "color .5s, background .5s",
+		  '-o-transition':      "color .5s, background .5s",
+		  'transition':         "color .5s, background .5s",
+		  position: 'relative',
+			'background-color': 'rgba(0,0,0,0.8)',
+			display: 'block',
+			height: '10px',
+			'min-width': '100px',
+			padding: '100px'
 		});
-		$(this).html("test");
+		if(startText.trim() === "Verona") {
+			var hlText = "An app to find friends across divides!"
+			var hlSiteLink = "https://getverona.com"
+			var hlInfoLink = "https://angel.co/verona-app" 
+		}
+		else if(startText.trim() === "Chess") {
+			var hlText = "Saveable and Loadable jQuery UI Chess Game"
+			var hlSiteLink = "https://lawchess.herokuapp.com"
+			var hlInfoLink = "https://github.com/sonomar/law_chess" 
+		}
+		else if(startText.trim() === "Juke") {
+			var hlText = "An app to find friends across divides!"
+			var hlSiteLink = "https://jukeapp.herokuapp.com"
+			var hlInfoLink = "https://github.com/sonomar/JUKE" 
+		};
+		$(this).children().html(
+			'<div id="project-description">' + hlText + '</div><span id="project-link"><a href=' + hlSiteLink + '>View Project</a></span><span id="project-info-link"><a href=' + hlInfoLink + '>More Info</a></span>'
+		);
 	});
 
-	$("body").on("mouseleave", ".recent-project", function () {
-		$(this).css({
-			'opacity': "1",
-			'-webkit-transition': "color .5s, opacity .5s",
-		  '-moz-transition':    "color .5s, opacity .5s",
-		  '-ms-transition':     "color .5s, opacity .5s",
-		  '-o-transition':      "color .5s, opacity .5s",
-		  'transition':         "color .5s, opacity .5s"
+	$("body").on("mouseleave", ".recent-project-wrapper", function () {
+		$(this).children().css({
+			'-webkit-transition': "color .5s, background .5s",
+		  '-moz-transition':    "color .5s, background .5s",
+		  '-ms-transition':     "color .5s, background .5s",
+		  '-o-transition':      "color .5s, background .5s",
+		  'transition':         "color .5s, background .5s",
+		  position: 'relative',
+			'background-color': 'rgba(0,0,0,0)',
+			display: 'block',
+			height: '10px',
+			'min-width': '100px',
+			padding: '100px'
 		});
-		$(this).html(startText);
+		$(this).children().html(startText);
 	});
 
 	$("body").on("click", "a", function() {
@@ -41,10 +68,11 @@ $(document).ready(function() {
 	    	window.scrollTo(0, 0);
 
 	    	//fade out on click
+	    	debugger
 	    	if($(".sub-heading").text().toLowerCase() === linkInfo.attr("href").slice(1)) {
 	    		return;
 	    	}
-	    	if($(".sub-heading").text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/") {
+	    	if($(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/about_vid") {
 	    		return;
 	    	}
 	    	if(linkInfo.attr("href").length > 1) {
@@ -61,17 +89,20 @@ $(document).ready(function() {
 	    	}
 
 	    	//highlights current page
-	    	for(i=0; i<4; i++) {
+	    	for(i=0; i<3; i++) {
 	    		$(".nav-links").children().eq(i).children().css({"color":"rgba(255,255,255,.7)"});
+	    		$(".nav-links").children().eq(i).addClass("hover-link");
 	    	}
 	    	var findTopLink = $(".nav-links").find(".top-" + linkInfo.attr("href").slice(1) + "-link");
+	      
 	    	if(linkInfo.attr("href").slice(1)[0] === undefined) {
 	    		$(".top-home-link").children().css({"color":"rgba(255,255,255,1)"})
 	    	}
 	    	else {
 	    		findTopLink.children().css({"color":"rgba(255,255,255,1)"})
 	    	};
-	    	return
+	    	setSibs = findTopLink;
+	    	return;
 	    });
 	  };
 	});

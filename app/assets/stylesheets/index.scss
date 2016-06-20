@@ -28,8 +28,12 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 
+.hover-link a:hover {
+	color: rgba(255, 255, 255, 1) !important;
+}
+
 .top-link a:visited {
-  color: rgba(255, 255, 255, 0.7);
+  color: inherit;
 }
 
 footer a {
@@ -41,7 +45,7 @@ footer a:hover {
 }
 
 footer a:visited {
-  color: rgba(255, 255, 255, 0.7);
+  color: inherit;
 }
 
 .nav-contact a {
@@ -224,13 +228,89 @@ z-index: -999999;
 	text-align: center;
 }
 
-.highlight-box {
+.recent-project-wrapper {
+	position: relative;
+	position: relative;
 	display: block;
-	background: image-url("testbg1.jpg") center no-repeat;
 	height: auto;
 	min-width: 100px;
-	padding: 100px;
 	margin: 20px;
+}
+
+#recent-project-1 {
+	background: image-url("verona1.jpg") center;
+}
+
+#recent-project-2 {
+	background: image-url("chess1.jpg") center;
+}
+
+#recent-project-3 {
+	background: image-url("juke1.jpg") center;
+}
+
+.highlight-box {
+	color: rgba(0,0,0,0);
+	display: block;
+	position: relative;
+	background-color: rgba(0,0,0,0);
+	height: 10px;
+	min-width: 100px;
+	padding: 100px;
+}
+
+#project-description {
+	position: relative;
+	bottom: 80px;
+	text-align: center;
+	color: white;
+}
+
+#project-link {
+	margin-right: 10px;
+	position: relative;
+	bottom: 40px;
+	text-align: center;
+	color: white;
+}
+
+#project-link a{
+ color: white;
+ border: white 1px solid;
+ padding: 10px;
+}
+
+#project-info-link a{
+	margin-left: 10px;
+	position: relative;
+	bottom: 40px;
+	text-align: center;
+	color: white;
+}
+
+
+#project-info-link a{
+	color: white;
+	border: white 1px solid;
+ 	padding: 10px;
+}
+
+#project-link a:visited{
+ color: white;
+}
+
+#project-info-link a:visited{
+	color: white;
+}
+
+#project-link a:hover{
+ color: black;
+ background-color: white;
+}
+
+#project-info-link a:hover{
+	color: black;
+	background-color: white;
 }
 
 .what-i-do-list {

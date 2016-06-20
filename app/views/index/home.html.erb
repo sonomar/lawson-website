@@ -4,7 +4,7 @@
 	<div class="white-box why-me-video-box">
 		<div class="why-me-title">WHO AM I?</div>
 		<div class="why-me-video">
-			<img src=<%=image_path("testbg1")%>>
+			<img id="why-me-video-box-id" src=<%=image_path("testbg1")%>>
 		</div>
 		<div class="why-me-button-box button-box"><span class="why-me-button shade-button box-link"><a href="/about">About Me</a></span></div>
 	</div>
@@ -12,9 +12,15 @@
 	<div class="shade-box-no-padding latest-projects-box">
 		<div class="latest-projects-title">MY LATEST PROJECTS</div>
 		<div class="latest-projects">
-			<span class="recent-project highlight-box">Chess</span>
-			<span class="recent-project highlight-box">Verona</span>
-			<span class="recent-project highlight-box">Juke</span>
+		  <span class="recent-project-wrapper" id="recent-project-1">
+				<span class="recent-project highlight-box">Verona</span>
+			</span>
+			<span class="recent-project-wrapper" id=recent-project-2>
+				<span class="recent-project highlight-box">Chess</span>
+			</span>
+			<span class="recent-project-wrapper" id="recent-project-3">
+				<span class="recent-project highlight-box">Juke</span>
+			</span>
 		</div>
 		<!-- <div class="more-projects-button-box button-box"><span class="more-projects-button shade-button"><a href="/projects">More Projects</a></span></div> -->
 	</div>
@@ -54,19 +60,19 @@
 		<div class="everyday-life-title">MY FAVORITE THINGS</div>
 		<div class="everyday-life-list">
 			
-				<img class="everyday-image"  src=<%=image_path("testbg1")%>>
+				<img class="everyday-image"  src=<%=image_path("inspiration1")%>>
 				
-				<img class="everyday-image" src=<%=image_path("testbg1")%>>
+				<img class="everyday-image" src=<%=image_path("inspiration2")%>>
 				
-				<img class="everyday-image"  src=<%=image_path("testbg1")%>>
+				<img class="everyday-image"  src=<%=image_path("inspiration3")%>>
 		</div>
 		<div class="everyday-life-list">
 			
-				<img class="everyday-image"  src=<%=image_path("testbg1")%>>
+				<img class="everyday-image"  src=<%=image_path("inspiration4")%>>
 				
-				<img class="everyday-image"  src=<%=image_path("testbg1")%>>
+				<img class="everyday-image"  src=<%=image_path("inspiration5")%>>
 				
-				<img class="everyday-image"  src=<%=image_path("testbg1")%>>
+				<img class="everyday-image"  src=<%=image_path("inspiration6")%>>
 		</div>
 		<div class="everyday-life-button-box button-box"><span class="everyday-life-button shade-button"><a href="/about">More Favorites</a></span></div>
 	</div>
