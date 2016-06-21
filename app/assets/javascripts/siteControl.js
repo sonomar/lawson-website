@@ -68,11 +68,11 @@ $(document).ready(function() {
 	    	window.scrollTo(0, 0);
 
 	    	//fade out on click
-	    	debugger
+	    	
 	    	if($(".sub-heading").text().toLowerCase() === linkInfo.attr("href").slice(1)) {
 	    		return;
 	    	}
-	    	if($(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/about_vid") {
+	    	if($(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/about_vid" || $(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/") {
 	    		return;
 	    	}
 	    	if(linkInfo.attr("href").length > 1) {
