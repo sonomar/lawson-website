@@ -15,7 +15,7 @@
 				<span class="top-link top-home-link" id="top-home-link-id"><a href="/">Home</a></span>
 				<span class="top-link top-about-link" id="top-about-link-id"><a href="/about">About</a></span>
 				<span class="top-link top-resume-link" id="top-resume-link-id"><a href="/resume">Resume</a></span>
-				<span class="nav-contact box-link" id="top-contact-link-id"><a href="/contact">Contact</a></span>
+				<span class="nav-contact box-link" id="top-contact-link-id"><a href="#myModal" data-toggle="modal">Contact</a></span>
 			</span>
 		</div>
 		<div class="heading">
@@ -30,6 +30,20 @@
 <%= yield %>
 </div>
 
+<div id="myModal" class="modal fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+    <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn">Close</a>
+    <a href="#" class="btn btn-primary">Send</a>
+  </div>
+</div>
+
 <footer class="footer">
 	<div class="bottom-navbar">
 				<div class="icon bottom-icon">LAWSON MARLOWE</div>
@@ -37,7 +51,7 @@
 					<span><a href="/">Home</a></span>
 					<span><a href="/about">About</a></span>
 					<span><a href="/resume">Resume</a></span>
-					<span><a href="/contact">Contact</a></span>
+					<span><a href="#myModal" data-toggle="modal">Contact</a></span>
 				</div>
 				<div class="copywrite">@2016 Lawson Marlowe. All rights reserved. Fullstack Developer/UX-UI Expert</div>
 				<div class="legal">

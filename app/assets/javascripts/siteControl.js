@@ -2,6 +2,10 @@ $(document).ready(function() {
 
 	var startText;
 
+  // $("body").on("click", ".nav-contact span", function() {
+  // 	$('#myModal').modal('show');
+  // });
+
 	$("body").on("mouseenter", ".recent-project-wrapper", function () {
 		startText = $(this).text();
 		$(this).children().css({
@@ -23,7 +27,7 @@ $(document).ready(function() {
 			var hlInfoLink = "https://angel.co/verona-app" 
 		}
 		else if(startText.trim() === "Chess") {
-			var hlText = "Saveable and Loadable jQuery UI Chess Game"
+			var hlText = "Saveable jQuery UI Chess Game"
 			var hlSiteLink = "https://lawchess.herokuapp.com"
 			var hlInfoLink = "https://github.com/sonomar/law_chess" 
 		}
