@@ -5,10 +5,12 @@ Rails.application.routes.draw do
   get 'blog' => 'index#blog'
   get 'about' => 'index#about'
   get 'projects' => 'index#projects'
-  get 'contact' => 'index#contact'
   get 'resume' => 'index#resume'
   get 'about_vid' => 'index#about_vid'
   get 'legal' => 'index#legal'
+
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

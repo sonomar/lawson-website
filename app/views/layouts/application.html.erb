@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="supreme-container">
 <header class="header">
 		<div class="top-navbar">
 			<span class="icon top-icon"><img src=<%=image_path("testbg1")%>></span>
@@ -15,7 +15,7 @@
 				<span class="top-link top-home-link" id="top-home-link-id"><a href="/">Home</a></span>
 				<span class="top-link top-about-link" id="top-about-link-id"><a href="/about">About</a></span>
 				<span class="top-link top-resume-link" id="top-resume-link-id"><a href="/resume">Resume</a></span>
-				<span class="nav-contact box-link" id="top-contact-link-id"><a href="#myModal" data-toggle="modal">Contact</a></span>
+				<span class="nav-contact box-link" id="top-contact-link-id"><a class="modal-path" href="/contacts/new">Contact</a></span>
 			</span>
 		</div>
 		<div class="heading">
@@ -30,20 +30,6 @@
 <%= yield %>
 </div>
 
-<div id="myModal" class="modal fade">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Modal header</h3>
-  </div>
-  <div class="modal-body">
-    <p>One fine body…</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
-    <a href="#" class="btn btn-primary">Send</a>
-  </div>
-</div>
-
 <footer class="footer">
 	<div class="bottom-navbar">
 				<div class="icon bottom-icon">LAWSON MARLOWE</div>
@@ -51,7 +37,7 @@
 					<span><a href="/">Home</a></span>
 					<span><a href="/about">About</a></span>
 					<span><a href="/resume">Resume</a></span>
-					<span><a href="#myModal" data-toggle="modal">Contact</a></span>
+					<span><a class="modal-path" href="/contacts/new">Contact</a></span>
 				</div>
 				<div class="copywrite">@2016 Lawson Marlowe. All rights reserved. Fullstack Developer/UX-UI Expert</div>
 				<div class="legal">
@@ -67,11 +53,11 @@
 				<span><a href="http://www.twitter.com/sonomar"><img src=<%=image_path("twitter")%>></a></span>
 				<span><a href="http://www.github.com/sonomar"><img src=<%=image_path("github")%>></a></span>
 				<span><a href="https://angel.co/lawson-e-marlowe"><img src=<%=image_path("angel")%>></a></span>
-				<span><a href="/contact"><img src=<%=image_path("mail")%>></a></span>
+				<span><a class="modal-path" href="/contacts/new"><img src=<%=image_path("mail")%>></a></span>
 			</div>
 		</div>
 	  <div class="footer-filler"></div>
 </footer>
-
+</div>
 </body>
 </html>

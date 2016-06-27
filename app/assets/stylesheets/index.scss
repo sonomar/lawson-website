@@ -469,9 +469,27 @@ footer div {
 
 .modal {
 	background-color: white !important;
-	width: 50% !important;
-	height: 50% !important;
+	opacity: .8 !important;
+	width: 70% !important;
+	height: 70% !important;
 	text-align: center;
-	left: 25% !important;
+	left: 15% !important;
 	top: 10% !important;
+}
+
+#send-mail-form label {
+	display: block;
+}
+
+.close-mail-modal {
+	float: none !important;
+	background-color: unset;
+}
+
+body.modal-open .supreme-container {
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+    filter: blur(1px);
 }

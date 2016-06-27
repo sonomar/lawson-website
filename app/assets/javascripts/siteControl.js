@@ -2,9 +2,18 @@ $(document).ready(function() {
 
 	var startText;
 
-  // $("body").on("click", ".nav-contact span", function() {
-  // 	$('#myModal').modal('show');
-  // });
+  $("body").on("submit", "#send-mail-form", function(e) {
+  	e.preventDefault();
+  	e.stopPropagation();
+  	$(".modal-body").html('<p>"Form Submitted!"</p><div class="text-center"><button type="button" class="close close-mail-modal" data-dismiss="modal">CLOSE</button></div>')
+  });
+ //    $.ajax({
+ //    		type: "get",
+ //        url: $(this).attr("href")
+ //    }).done(function(results) {
+         
+ //      })
+	// });
 
 	$("body").on("mouseenter", ".recent-project-wrapper", function () {
 		startText = $(this).text();
@@ -68,45 +77,53 @@ $(document).ready(function() {
 	      url: linkInfo.attr("href"),
 	      data: $(this).serialize()
 	    }).done(function(results) {
+	    	if(linkInfo.attr("href") ==="/contacts/new") {
+	    		window.scrollTo(0, 0);
+	    		$(results).appendTo("body");
+        	$('#myModal').modal('show');
+      	}
+      	else {
 	    	$(".page-contents").html(results);
 	    	window.scrollTo(0, 0);
 
-	    	//fade out on click
-	    	
-	    	if($(".sub-heading").text().toLowerCase() === linkInfo.attr("href").slice(1)) {
-	    		return;
-	    	}
-	    	if($(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/about_vid" || $(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/") {
-	    		return;
-	    	}
-	    	if(linkInfo.attr("href").length > 1) {
-	    		$(".sub-heading").fadeOut( "slow", function() {
-  					$(".sub-heading").html(linkInfo.attr("href").slice(1).toUpperCase());
-  				});
-	    		$(".sub-heading").fadeIn( "slow" );
-	    	}
-	    	else {
-	    	$(".sub-heading").fadeOut( "slow", function() {
-	    		$(".sub-heading").html('<span class="heading-link box-link"><a href="/about_vid">Watch Video</a></span>')
-	    	});
-	    	$(".sub-heading").fadeIn( "slow" );
-	    	}
 
-	    	//highlights current page
-	    	for(i=0; i<3; i++) {
-	    		$(".nav-links").children().eq(i).children().css({"color":"rgba(255,255,255,.7)"});
-	    		$(".nav-links").children().eq(i).addClass("hover-link");
-	    	}
-	    	var findTopLink = $(".nav-links").find(".top-" + linkInfo.attr("href").slice(1) + "-link");
-	      
-	    	if(linkInfo.attr("href").slice(1)[0] === undefined) {
-	    		$(".top-home-link").children().css({"color":"rgba(255,255,255,1)"})
-	    	}
-	    	else {
-	    		findTopLink.children().css({"color":"rgba(255,255,255,1)"})
-	    	};
-	    	setSibs = findTopLink;
-	    	return;
+		    	//fade out on click
+		    	
+		    	if($(".sub-heading").text().toLowerCase() === linkInfo.attr("href").slice(1)) {
+		    		return;
+		    	}
+		    	if($(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/about_vid" || $(".sub-heading").children().children().text().toLowerCase() === "watch video" && linkInfo.attr("href") === "/") {
+		    		return;
+		    	}
+		    	if(linkInfo.attr("href").length > 1) {
+		    		$(".sub-heading").fadeOut( "slow", function() {
+	  					$(".sub-heading").html(linkInfo.attr("href").slice(1).toUpperCase());
+	  				});
+		    		$(".sub-heading").fadeIn( "slow" );
+		    	}
+		    	else {
+		    	$(".sub-heading").fadeOut( "slow", function() {
+		    		$(".sub-heading").html('<span class="heading-link box-link"><a href="/about_vid">Watch Video</a></span>')
+		    	});
+		    	$(".sub-heading").fadeIn( "slow" );
+		    	}
+
+		    	//highlights current page
+		    	for(i=0; i<3; i++) {
+		    		$(".nav-links").children().eq(i).children().css({"color":"rgba(255,255,255,.7)"});
+		    		$(".nav-links").children().eq(i).addClass("hover-link");
+		    	}
+		    	var findTopLink = $(".nav-links").find(".top-" + linkInfo.attr("href").slice(1) + "-link");
+		      
+		    	if(linkInfo.attr("href").slice(1)[0] === undefined) {
+		    		$(".top-home-link").children().css({"color":"rgba(255,255,255,1)"})
+		    	}
+		    	else {
+		    		findTopLink.children().css({"color":"rgba(255,255,255,1)"})
+		    	};
+		    	setSibs = findTopLink;
+		    	return;
+		    };
 	    });
 	  };
 	});
