@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	initMap();
+	
 	var startText;
 
   $("body").on("submit", "#send-mail-form", function(e) {
