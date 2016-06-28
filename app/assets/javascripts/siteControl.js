@@ -1,6 +1,4 @@
 $(document).ready(function() {
-
-	initMap();
 	
 	var startText;
 
@@ -87,6 +85,9 @@ $(document).ready(function() {
       	else {
 	    	$(".page-contents").html(results);
 	    	window.scrollTo(0, 0);
+	    		if(linkInfo.attr("href") === "/about") {
+	    			initMap();
+	    		};
 
 
 		    	//fade out on click
