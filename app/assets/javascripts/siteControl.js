@@ -106,7 +106,7 @@ $(document).ready(function() {
 		    	}
 		    	else {
 		    	$(".sub-heading").fadeOut( "slow", function() {
-		    		$(".sub-heading").html('<span class="heading-link box-link"><a href="/about_vid">Watch Video</a></span>')
+		    		$(".sub-heading").html('<span class="heading-link box-link"><a href="/about">Learn More</a></span>')
 		    	});
 		    	$(".sub-heading").fadeIn( "slow" );
 		    	}
