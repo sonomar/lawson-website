@@ -2,6 +2,61 @@ $(document).ready(function() {
 	
 	var startText;
 
+	$("body").on("mouseenter", ".everyday-image", function() {
+		$(this).css({
+			'-webkit-transition': "height .5s, width .5s",
+		  '-moz-transition':    "height .5s, width .5s",
+		  '-ms-transition':     "height .5s, width .5s",
+		  '-o-transition':      "height .5s, width .5s",
+		  'transition':         "height .5s, width .5s",
+			'width': '25%',
+  		'height': '25%'
+		})
+	});
+
+	$("body").on("click", ".front-ev-image", function() {
+		$(this).css({
+			'-webkit-transition': "height .5s, width .5s",
+		  '-moz-transition':    "height .5s, width .5s",
+		  '-ms-transition':     "height .5s, width .5s",
+		  '-o-transition':      "height .5s, width .5s",
+		  'transition':         "height .5s, width .5s",
+			'box-shadow': 'none',
+			'width': '20%',
+  		'height': '20%'
+		})
+		$(".image-modal-body").html('<img class="full-ev-image" src=' + $(this).attr("src") + '>');
+		$('#myImageModal').modal({
+			show: true
+		})
+	});
+
+	$("body").on("click", ".ev-about-img", function() {
+		$(this).css({
+			'-webkit-transition': "height .5s, width .5s",
+		  '-moz-transition':    "height .5s, width .5s",
+		  '-ms-transition':     "height .5s, width .5s",
+		  '-o-transition':      "height .5s, width .5s",
+		  'transition':         "height .5s, width .5s",
+			'box-shadow': 'none',
+			'width': '20%',
+  		'height': '20%'
+		})
+	});
+
+	$("body").on("mouseleave", ".everyday-image", function() {
+		$(this).css({
+			'-webkit-transition': "height .5s, width .5s",
+		  '-moz-transition':    "height .5s, width .5s",
+		  '-ms-transition':     "height .5s, width .5s",
+		  '-o-transition':      "height .5s, width .5s",
+		  'transition':         "height .5s, width .5s",
+			'box-shadow': 'none',
+			'width': '20%',
+  		'height': '20%'
+		})
+	});
+
   $("body").on("submit", "#send-mail-form", function(e) {
   	e.preventDefault();
   	e.stopPropagation();

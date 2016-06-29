@@ -387,8 +387,8 @@ z-index: -999999;
 }
 
 .everyday-image {
-  width: 15%;
-  height: 15%;
+  width: 20%;
+  height: 20%;
   margin: 5px;
 }
 
@@ -401,7 +401,7 @@ z-index: -999999;
 }
 
 .everyday-life-button-box {
-	margin-top: 30px !important;
+	margin-top: 60px !important;
 }
 
 .everyday-life-title {
@@ -480,7 +480,7 @@ footer div {
 	display: none;
 }
 
-.modal {
+#myModal {
 	background-color: white !important;
 	opacity: .8 !important;
 	width: 70% !important;
@@ -489,6 +489,24 @@ footer div {
 	left: 15% !important;
 	top: 10% !important;
 }
+
+#myImageModal {
+	background: rgba(0,0,0,0.5) !important;
+	text-align: center;
+}
+
+#myImageModal img {
+	height: 450px;
+}
+
+.image-modal-close-button {
+	font-size: 30px !important;
+	background-color: white !important;
+	width: 50% !important;
+	border: black 1px solid !important;
+	border-radius: 10px !important;
+}
+
 
 #send-mail-form label {
 	display: block;
